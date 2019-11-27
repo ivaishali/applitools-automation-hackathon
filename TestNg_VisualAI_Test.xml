@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Applitools Hackathon Selenium Test Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="Selenium Tests" >
+        <classes>
+            <class name="com.automation.visualAI.LoginVisualAITests"/>
+            <class name="com.automation.visualAI.LoginDataDrivenVisualAITest"/>
+            <class name="com.automation.visualAI.CanvasVisualAITest"/>
+            <class name="com.automation.visualAI.AdvertisementVisualAITest"/>
+            <class name="com.automation.visualAI.TableSortVisualAITest"/>
+        </classes>
+    </test>
+</suite>
