@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5e8033-60b1-49dc-8642-fb759fd56cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/Utils/DriverUtilsForVisualAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Utils/DriverUtilsForVisualAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginVisualAITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginVisualAITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +150,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
