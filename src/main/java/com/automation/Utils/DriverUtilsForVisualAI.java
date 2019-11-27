@@ -26,17 +26,18 @@ public class DriverUtilsForVisualAI {
     static ClassicRunner classicRunner;
 
     public static void initDriverForApplitools() {
-        loadProperties();
-        initEye();
-        if (getPropertyByKey("driver.name").equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
-            ChromeOptions options = new ChromeOptions();
+        if(driver == null) {
+            loadProperties();
+            initEye();
+            if (getPropertyByKey("driver.name").equalsIgnoreCase("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
+                ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
-            driver = new ChromeDriver(options);
+                driver = new ChromeDriver(options);
+            }
+            driver.manage().window().maximize();
+            driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        eyes.open(driver, "Applitools Tests", Thread.currentThread().getStackTrace()[2].getMethodName());
     }
 
     public static WebDriver getApplitoolDriver() {
@@ -50,8 +51,6 @@ public class DriverUtilsForVisualAI {
         closeApplitoolEye();
         driver.manage().deleteAllCookies();
         driver.quit();
-        eyes.closeAsync();
-        eyes.abortIfNotClosed();
     }
 
     @AfterMethod
