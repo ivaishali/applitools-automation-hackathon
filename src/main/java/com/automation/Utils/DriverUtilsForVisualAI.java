@@ -3,6 +3,10 @@ package com.automation.Utils;
 import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
+import com.automation.Pages.CanvasPage;
+import com.automation.Pages.HomePage;
+import com.automation.Pages.LoginPage;
+import com.automation.visualAI.CanvasVisualAITest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -10,7 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,13 +25,18 @@ import static com.automation.Utils.PropertyUtils.getPropertyByKey;
 import static com.automation.Utils.PropertyUtils.loadProperties;
 
 public class DriverUtilsForVisualAI {
-    static WebDriver driver;
-    static Eyes eyes;
-    static BatchInfo batchInfo;
-    static ClassicRunner classicRunner;
+    public static WebDriver driver;
+    public static Eyes eyes;
+    public static BatchInfo batchInfo;
+    public static ClassicRunner classicRunner;
+    public static LoginPage loginPage;
+    public static HomePage homePage;
+    public static CanvasPage canvasPage;
 
+
+    @BeforeClass
     public static void initDriverForApplitools() {
-        if(driver == null) {
+        if (driver == null) {
             loadProperties();
             initEye();
             if (getPropertyByKey("driver.name").equalsIgnoreCase("chrome")) {
@@ -37,6 +47,9 @@ public class DriverUtilsForVisualAI {
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+            loginPage = new LoginPage(getApplitoolDriver());
+            homePage = new HomePage(getApplitoolDriver());
+            canvasPage = new CanvasPage(getApplitoolDriver());
         }
     }
 
@@ -47,13 +60,14 @@ public class DriverUtilsForVisualAI {
         return driver;
     }
 
+    @AfterClass
     public static void tearDownForApplitools() {
         closeApplitoolEye();
         driver.manage().deleteAllCookies();
         driver.quit();
     }
 
-    @AfterMethod
+
     public void recordFailure(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

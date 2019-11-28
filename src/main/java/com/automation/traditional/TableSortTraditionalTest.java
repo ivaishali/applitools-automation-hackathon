@@ -26,8 +26,8 @@ public class TableSortTraditionalTest {
      * the description matches the amount after sorting
      */
     public void testTableSort() {
-        LoginPage loginPage = new LoginPage();
-        HomePage homePage = new HomePage();
+        LoginPage loginPage = new LoginPage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
 
         getDriver().get(getPropertyByKey("base.url"));
         loginPage.login("test", "test");

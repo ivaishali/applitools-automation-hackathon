@@ -16,8 +16,9 @@ public class CanvasPage {
     @FindBy(xpath = "//*[@id='addDataset']")
     public WebElement showdatabtn;
 
-    public CanvasPage() {
-        PageFactory.initElements(getDriver(), this);
+    public CanvasPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     public boolean isChartAvailable() {

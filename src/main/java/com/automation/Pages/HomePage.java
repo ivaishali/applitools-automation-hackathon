@@ -30,8 +30,9 @@ public class HomePage {
     @FindBy(xpath = "//*[@id='flashSale2']/img[contains(@src,'flashSale2.gif')]")
     public WebElement flashAd2;
 
-    public HomePage() {
-        PageFactory.initElements(getDriver(), this);
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     public HashMap<String, String> getTableElements() {

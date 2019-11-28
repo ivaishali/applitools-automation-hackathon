@@ -23,9 +23,9 @@ public class AdvertisementTraditionalTest {
      * This test verifies the presence of flash sales ads- It expects to see a specific ad gif and flags if the gif is different or not present.
      */
     public void testDynamicContent() {
-        LoginPage loginPage = new LoginPage();
-        HomePage homePage = new HomePage();
         WebDriver driver = getDriver();
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
         driver.get(getPropertyByKey("base.adUrl"));
         loginPage.login("test", "test");
         Assert.assertTrue(homePage.isFirstAdPresent(), "Flash Sale Ad-1 is missing or different from expected");

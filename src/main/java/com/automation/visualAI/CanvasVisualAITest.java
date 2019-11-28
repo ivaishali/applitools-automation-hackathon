@@ -1,21 +1,11 @@
 package com.automation.visualAI;
 
-import com.automation.Pages.CanvasPage;
-import com.automation.Pages.HomePage;
-import com.automation.Pages.LoginPage;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import com.automation.Utils.DriverUtilsForVisualAI;
 import org.testng.annotations.Test;
 
-import static com.automation.Utils.DriverUtilsForVisualAI.*;
 import static com.automation.Utils.PropertyUtils.getPropertyByKey;
 
-public class CanvasVisualAITest {
-
-    @BeforeClass
-    public void beforeClassMethod() {
-        initDriverForApplitools();
-    }
+public class CanvasVisualAITest extends DriverUtilsForVisualAI {
 
     @Test
     /**
@@ -23,9 +13,6 @@ public class CanvasVisualAITest {
      * if the chart is still present after clicking on Show next year data.
      */
     public void verifyCanvasChartVisualAITest() {
-        LoginPage loginPage = new LoginPage();
-        HomePage homePage = new HomePage();
-        CanvasPage canvasPage = new CanvasPage();
 
         getApplitoolDriver().get(getPropertyByKey("base.url"));
         getApplitoolDriver().manage().window().maximize();
@@ -37,10 +24,5 @@ public class CanvasVisualAITest {
 
         canvasPage.clickShowDataNextYear();
         getEyeInstance().checkWindow("Compare Expenses Chart Next Year");
-    }
-
-    @AfterClass
-    public void afterClassMethod() {
-        tearDownForApplitools();
     }
 }

@@ -1,28 +1,14 @@
 package com.automation.visualAI;
 
-import com.applitools.eyes.selenium.Eyes;
-import com.automation.Pages.LoginPage;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import com.automation.Utils.DriverUtilsForVisualAI;
 import org.testng.annotations.Test;
 
-import static com.automation.Utils.DriverUtilsForVisualAI.*;
 import static com.automation.Utils.PropertyUtils.getPropertyByKey;
 
-public class LoginDataDrivenVisualAITest {
-
-    @BeforeClass
-    public void beforeClassMethod() {
-        initDriverForApplitools();
-    }
+public class LoginDataDrivenVisualAITest extends DriverUtilsForVisualAI {
 
     @Test
     public void verifyLoginVisualAITest (){
-
-        WebDriver driver = getApplitoolDriver();
-        Eyes eyes = getEyeInstance();
-        LoginPage loginPage = new LoginPage();
 
         driver.get(getPropertyByKey("base.url"));
         driver.manage().window().maximize();
@@ -44,10 +30,4 @@ public class LoginDataDrivenVisualAITest {
         eyes.checkWindow("Login Page correct credentials");
 
     }
-
-    @AfterClass
-    public void afterClassMethod() {
-        tearDownForApplitools();
-    }
-
 }

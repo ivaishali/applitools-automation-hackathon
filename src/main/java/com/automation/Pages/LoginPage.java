@@ -1,5 +1,6 @@
 package com.automation.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,12 +10,14 @@ import static com.automation.Utils.DriverUtils.getDriver;
 import static com.automation.Utils.WebElementIUtils.waitForVisible;
 
 public class LoginPage {
+    WebDriver driver;
 
     String username_missing_error_msg = "Username must be present";
     String password_missing_error_msg = "Password must be present";
     String credentials_missing_error_msg = "Both Username and Password must be present";
 
-    public LoginPage() {
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
         PageFactory.initElements(getDriver(), this);
     }
 

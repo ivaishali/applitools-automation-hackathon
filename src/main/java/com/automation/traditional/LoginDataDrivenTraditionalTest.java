@@ -23,8 +23,8 @@ public class LoginDataDrivenTraditionalTest {
      * of credentials returns an error message
      */
     public void testLoginMessages() {
-        LoginPage loginPage = new LoginPage();
         WebDriver driver = getDriver();
+        LoginPage loginPage = new LoginPage(driver);
         driver.get(PropertyUtils.getPropertyByKey("base.url"));
         Assert.assertEquals(loginPage.login("", ""), "Both Username and Password must be present", "Error message incorrect when username and password is missing");
         Assert.assertEquals(loginPage.login("test", ""), "Password must be present", "Error message incorrect when password is missing");

@@ -8,8 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.automation.Utils.DriverUtils.initDriver;
-import static com.automation.Utils.DriverUtils.tearDown;
+import static com.automation.Utils.DriverUtils.*;
 
 public class LoginPageTraditionalTests {
 
@@ -20,9 +19,9 @@ public class LoginPageTraditionalTests {
 
     @Test
     public void testTraditional() {
-        LoginPage loginPage = new LoginPage();
-        HomePage homePage = new HomePage();
-        CanvasPage canvasPage = new CanvasPage();
+        LoginPage loginPage = new LoginPage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
+        CanvasPage canvasPage = new CanvasPage(getDriver());
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(loginPage.verifyPageHeaderText(), "Page heading is not available or incorrect");
         softAssert.assertTrue(loginPage.verifyToggleLink(), "Toggle theme option is not enabled or not present on the page");

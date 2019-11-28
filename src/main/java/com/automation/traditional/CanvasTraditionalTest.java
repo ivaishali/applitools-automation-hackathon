@@ -25,10 +25,10 @@ public class CanvasTraditionalTest {
      * if the chart is still present after clicking on Show next year data.
      */
     public void verifyCanvasChart() {
-        LoginPage loginPage = new LoginPage();
-        HomePage homePage = new HomePage();
-        CanvasPage canvasPage = new CanvasPage();
         WebDriver driver = getDriver();
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
+        CanvasPage canvasPage = new CanvasPage(driver);
         driver.get(getPropertyByKey("base.url"));
         loginPage.login("test", "test");
         homePage.clickCompareExpenses();

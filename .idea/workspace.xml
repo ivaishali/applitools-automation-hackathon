@@ -3,7 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="8f5e8033-60b1-49dc-8642-fb759fd56cff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AplpitoolsHackathon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AplpitoolsHackathon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/Pages/CanvasPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Pages/CanvasPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/Utils/DriverUtilsForVisualAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/Utils/DriverUtilsForVisualAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/traditional/AdvertisementTraditionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/traditional/AdvertisementTraditionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/traditional/CanvasTraditionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/traditional/CanvasTraditionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/traditional/LoginDataDrivenTraditionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/traditional/LoginDataDrivenTraditionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/traditional/LoginPageTraditionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/traditional/LoginPageTraditionalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/traditional/TableSortTraditionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/traditional/TableSortTraditionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/AdvertisementVisualAITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/AdvertisementVisualAITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/CanvasVisualAITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/CanvasVisualAITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginDataDrivenVisualAITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginDataDrivenVisualAITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginVisualAITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/LoginVisualAITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Pages/CanvasPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Utils/DriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Utils/DriverUtilsForVisualAI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Utils/PropertyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/Utils/WebElementIUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/traditional/AdvertisementTraditionalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/traditional/CanvasTraditionalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/traditional/LoginDataDrivenTraditionalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/traditional/LoginPageTraditionalTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/traditional/TableSortTraditionalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/visualAI/AdvertisementVisualAITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/visualAI/CanvasVisualAITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/visualAI/LoginDataDrivenVisualAITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/visualAI/LoginVisualAITests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/visualAI/TableSortVisualAITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +82,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginVisualAITests.verifyUIVisualAITest">
-    <configuration name="AdvertisementVisualAITest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AdvertisementTraditionalTest.testDynamicContent">
+    <configuration name="AdvertisementTraditionalTest.testDynamicContent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AplpitoolsHackathon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.traditional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.traditional" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.traditional.AdvertisementTraditionalTest" />
+      <option name="METHOD_NAME" value="testDynamicContent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvertisementVisualAITest.verifyDynamicContentVisualAITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AplpitoolsHackathon" />
       <extension name="coverage">
         <pattern>
@@ -60,14 +111,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.visualAI" />
       <option name="MAIN_CLASS_NAME" value="com.automation.visualAI.AdvertisementVisualAITest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="verifyDynamicContentVisualAITest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginVisualAITests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TableSortVisualAITest.verifyTableSortVisualAITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AplpitoolsHackathon" />
       <extension name="coverage">
         <pattern>
@@ -76,25 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.visualAI" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.visualAI.LoginVisualAITests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginVisualAITests.verifyUIVisualAITest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AplpitoolsHackathon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.visualAI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.visualAI" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.visualAI.LoginVisualAITests" />
-      <option name="METHOD_NAME" value="verifyUIVisualAITest" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.visualAI.TableSortVisualAITest" />
+      <option name="METHOD_NAME" value="verifyTableSortVisualAITest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginVisualAITests.verifyUIVisualAITest" />
-        <item itemvalue="TestNG.LoginVisualAITests" />
+        <item itemvalue="TestNG.AdvertisementTraditionalTest.testDynamicContent" />
         <item itemvalue="TestNG./Users/vaishali.thakkar/ToDo/AplpitoolsHackathon/TestNg_VisualAI_Test.xml" />
         <item itemvalue="TestNG./Users/vaishali.thakkar/ToDo/AplpitoolsHackathon/TestNg_TRaditional_Test.xml" />
-        <item itemvalue="TestNG.AdvertisementVisualAITest" />
+        <item itemvalue="TestNG.TableSortVisualAITest.verifyTableSortVisualAITest" />
+        <item itemvalue="TestNG.AdvertisementVisualAITest.verifyDynamicContentVisualAITest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,31 +192,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/automation/visualAI/TableSortVisualAITest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
